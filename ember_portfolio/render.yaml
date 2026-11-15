@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: sri-lochana-portfolio
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    envVars:
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DB_PATH
+        value: /var/data/portfolio.db
+    disk:
+      name: portfolio-data
+      mountPath: /var/data
+      sizeGB: 1

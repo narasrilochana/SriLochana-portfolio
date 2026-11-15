@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sri Lochana — CSE AIML student at Jain University. Exploring Python, AI and machine learning.">
+  <title>Sri Lochana — Pixel Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Cormorant+Garamond:ital,wght@1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="scanline" aria-hidden="true"></div>
+  <header class="site-header">
+    <nav class="nav wrap" aria-label="Main navigation">
+      <a class="brand pixel" href="#home">SL<span>.</span></a>
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <div class="nav-links">
+        <a href="#about">about</a><a href="#skills">skills</a><a href="#projects">projects</a><a href="#interests">little things</a><a class="nav-contact" href="#contact">say hello <span>↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero wrap" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow pixel">HELLO, WORLD! <span class="tiny-heart">♥</span></p>
+        <h1 class="pixel">I'm Sri<br><span class="pink">Lochana</span><span class="cursor">_</span></h1>
+        <p class="hero-kicker">CSE AIML student · curious by nature · learning by building</p>
+        <p class="body-copy hero-intro">I'm pursuing Computer Science Engineering with a specialisation in Artificial Intelligence and Machine Learning at Jain University. I'm building my foundations in programming and exploring how data and intelligent systems can solve real-world problems.</p>
+        <div class="hero-buttons">
+          <a class="pixel-button" href="#projects">EXPLORE MY WORK <span>↘</span></a>
+          <a class="text-link" href="#contact">let's connect <span>♡</span></a>
+        </div>
+        <div class="hero-foot"><span class="status-dot"></span> CURRENTLY LEARNING PYTHON + AI/ML</div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-sticker"><img src="{{ url_for('static', filename='images/pixel-coder.png') }}" alt="Pixel art illustration of a person coding at a computer"></div>
+        <div class="sticker-label pixel">LOADING IDEAS...</div>
+        <span class="deco deco-star">✦</span><span class="deco deco-heart">♥</span>
+        <div class="mini-window"><span class="window-dots">● ● ●</span><span class="window-text pixel">hello.py</span><span class="window-code">print("hello, world!")</span></div>
+      </div>
+    </section>
+
+    <div class="ticker" aria-label="Portfolio interests">
+      <div class="ticker-track pixel"><span>✦ PYTHON</span><span>♡ AI + MACHINE LEARNING</span><span>✦ CREATIVE THINKING</span><span>♡ CULINARY ARTS</span><span>✦ ALWAYS LEARNING</span><span>♡ PYTHON</span><span>✦ AI + MACHINE LEARNING</span></div>
+    </div>
+
+    <section class="section wrap" id="about">
+      <div class="section-title"><p class="eyebrow pixel">01 / A LITTLE ABOUT ME</p><h2 class="pixel">The person<br>behind the <span class="pink">pixels.</span></h2></div>
+      <div class="about-layout">
+        <div class="about-art"><img src="{{ url_for('static', filename='images/retro-cat-computer.png') }}" alt="Retro illustration of a cat looking at a computer screen"><span class="image-caption pixel">FOCUS MODE: ON</span></div>
+        <div class="about-text">
+          <p class="body-copy">I'm a CSE AIML student who enjoys learning how technology works and finding ways to use it in practical projects. I'm especially interested in Python and the wider world of artificial intelligence and machine learning.</p>
+          <p class="body-copy">When I'm not exploring tech, I enjoy culinary arts, trying new ideas in the kitchen and learning about different things. I believe there's always something new worth discovering.</p>
+          <div class="about-facts"><div><strong class="pixel">01</strong><span>learn something new</span></div><div><strong class="pixel">02</strong><span>build with curiosity</span></div><div><strong class="pixel">03</strong><span>stay creative</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills-section" id="skills">
+      <div class="wrap">
+        <div class="section-title"><p class="eyebrow pixel">02 / MY TOOLKIT</p><h2 class="pixel">Skills I'm <span class="pink">growing.</span></h2><p class="body-copy section-subtitle">A growing toolkit built through coursework, practice and projects. Python and AI/ML are my main areas of focus.</p></div>
+        <div class="skills-grid">
+          <article class="skill-card skill-main"><span class="skill-index pixel">01</span><div class="skill-icon">Py</div><h3 class="pixel">Python</h3><p class="body-copy">My main developing programming skill. Building confidence with fundamentals, problem-solving and practical applications.</p><span class="skill-status pixel">CURRENT FOCUS</span></article>
+          <article class="skill-card skill-main"><span class="skill-index pixel">02</span><div class="skill-icon">✳</div><h3 class="pixel">AI + MACHINE LEARNING</h3><p class="body-copy">Exploring AI/ML foundations, datasets, data preparation and how intelligent systems learn from information.</p><span class="skill-status pixel">CURRENT FOCUS</span></article>
+          <article class="skill-card"><span class="skill-index pixel">03</span><div class="skill-icon">C</div><h3 class="pixel">C PROGRAMMING</h3><p class="body-copy">Core programming concepts and logical problem-solving.</p></article>
+          <article class="skill-card"><span class="skill-index pixel">04</span><div class="skill-icon">⌘</div><h3 class="pixel">WEB BASICS</h3><p class="body-copy">HTML, CSS and JavaScript fundamentals.</p></article>
+          <article class="skill-card"><span class="skill-index pixel">05</span><div class="skill-icon">Git</div><h3 class="pixel">GIT + GITHUB</h3><p class="body-copy">Version control and organising project work.</p></article>
+          <article class="skill-card"><span class="skill-index pixel">06</span><div class="skill-icon">DB</div><h3 class="pixel">DATA + DATABASES</h3><p class="body-copy">Working with structured data and SQL basics.</p></article>
+        </div>
+        <div class="skill-sticker"><img src="{{ url_for('static', filename='images/pixel-brain.png') }}" alt="Pixel art brain working on a laptop with a cup of coffee"><span class="pixel">BRAIN.EXE IS RUNNING</span></div>
+      </div>
+    </section>
+
+    <section class="section wrap" id="projects">
+      <div class="section-title"><p class="eyebrow pixel">03 / THINGS I'VE BUILT & EXPLORED</p><h2 class="pixel">A few of my <span class="pink">projects.</span></h2><p class="body-copy section-subtitle">Academic projects and learning experiences that connect concepts with practical work.</p></div>
+      <div class="projects-grid">
+        <article class="project-card project-large"><div class="project-head"><span class="pixel">PROJECT_01</span><span class="project-tag">AI / ML · DATA</span></div><div class="project-illustration project-screen"><span class="pixel">DATA → PATTERNS → INSIGHT</span></div><h3 class="pixel">INSIDER THREAT DETECTION</h3><p class="body-copy">Working with an insider-threat dataset through data organisation, labelling, train/validation/test splits and preparation for a small language model workflow.</p><div class="tags"><span>Python</span><span>Dataset preparation</span><span>AI / ML</span></div></article>
+        <article class="project-card"><div class="project-head"><span class="pixel">PROJECT_02</span><span class="project-tag">HARDWARE</span></div><div class="project-illustration project-gas"><span class="pixel">LPG</span><small>DETECT · ALERT</small></div><h3 class="pixel">LPG GAS LEAKAGE DETECTOR</h3><p class="body-copy">An academic project focused on detecting LPG leakage and providing an alert to support awareness and safety.</p><div class="tags"><span>Sensor systems</span><span>Safety</span></div></article>
+        <article class="project-card"><div class="project-head"><span class="pixel">PROJECT_03</span><span class="project-tag">MATHEMATICS</span></div><div class="project-illustration project-matrix"><span class="pixel">AX = 0</span><small>[ 1&nbsp; 0&nbsp; 0 ]</small><small>[ 0&nbsp; 1&nbsp; 0 ]</small></div><h3 class="pixel">CHEMICAL EQUATIONS USING MATRICES</h3><p class="body-copy">Using matrices and row operations to balance chemical equations while applying the principle of conservation of mass.</p><div class="tags"><span>Matrices</span><span>Linear algebra</span></div></article>
+      </div>
+      <div class="git-sticker"><img src="{{ url_for('static', filename='images/git-it-girl.png') }}" alt="Pink retro Git it girl sticker"><span class="body-copy">little commits, big progress.</span></div>
+    </section>
+
+    <section class="section interests-section" id="interests">
+      <div class="wrap interests-layout">
+        <div><p class="eyebrow pixel">04 / OUTSIDE THE SCREEN</p><h2 class="pixel">A few more<br><span class="pink">things I love.</span></h2><p class="body-copy">Technology is a big part of what I'm learning, but curiosity doesn't stop there.</p></div>
+        <div class="interest-cards">
+          <article class="interest-card"><div class="interest-icon">♡</div><h3 class="pixel">CULINARY ARTS</h3><p class="body-copy">I love exploring food, learning recipes and enjoying the creative side of cooking.</p></article>
+          <article class="interest-card"><div class="interest-icon">✦</div><h3 class="pixel">TECH EXPLORATION</h3><p class="body-copy">I enjoy discovering new tools, ideas and areas of technology beyond the classroom.</p></article>
+        </div>
+      </div>
+      <div class="dino-note wrap"><img src="{{ url_for('static', filename='images/pixel-dino.png') }}" alt="Pink pixel dinosaur with clouds and hearts"></div>
+    </section>
+
+    <section class="section wrap education-section" id="education">
+      <div class="section-title"><p class="eyebrow pixel">05 / THE LEARNING LOG</p><h2 class="pixel">My <span class="pink">education.</span></h2></div>
+      <div class="education-card"><div class="education-mark pixel">JU</div><div><h3 class="pixel">JAIN UNIVERSITY</h3><p class="body-copy">B.E. / Computer Science Engineering — Artificial Intelligence and Machine Learning</p><span class="education-date">2025 — 2029</span></div></div>
+      <p class="education-note body-copy">This portfolio will grow as I complete more coursework, projects and certifications.</p>
+    </section>
+
+    <section class="section wrap contact-section" id="contact">
+      <div class="contact-panel">
+        <div class="contact-copy"><p class="eyebrow pixel">06 / OPEN A CONVERSATION</p><h2 class="pixel">Let's make<br>something <span class="pink">cool.</span></h2><p class="body-copy">Have a project idea, a question or just want to connect? Send me a message.</p><div class="contact-cat"><img src="{{ url_for('static', filename='images/meow-cat.png') }}" alt="Pixel art cat saying meow"></div></div>
+        <div class="contact-form-wrap">
+          {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}{% for category, message in messages %}<div class="flash {{ category }}" role="status">{{ message }}</div>{% endfor %}{% endif %}
+          {% endwith %}
+          <form action="{{ url_for('contact') }}" method="POST">
+            <label for="name">YOUR NAME</label><input id="name" name="name" type="text" maxlength="80" placeholder="Type your name..." required>
+            <label for="email">EMAIL ADDRESS</label><input id="email" name="email" type="email" maxlength="254" placeholder="you@example.com" required>
+            <label for="message">YOUR MESSAGE</label><textarea id="message" name="message" maxlength="2000" rows="4" placeholder="Write something nice..." required></textarea>
+            <button class="pixel-button submit-button" type="submit">SEND MESSAGE ↗</button>
+          </form>
+          <p class="form-note body-copy">Powered by a Python + SQLite backend.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer wrap"><a class="brand pixel" href="#home">SL<span>.</span></a><p class="body-copy">made with curiosity, coffee & a little bit of pixel magic ♡</p><a class="back-top pixel" href="#home">BACK TO TOP ↑</a></footer>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

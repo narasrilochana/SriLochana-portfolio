@@ -1,0 +1,7 @@
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+portfolio.db
+.env
+.DS_Store
